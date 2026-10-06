@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "AssetReceiver",
+      "constructorArgs": ["$owner", "0x0000000000000000000000000000000000000000"]
+    }
+  ],
+  "notes": "Ethereum mainnet only. Lifetime $10,000 accepted-deposit cap at ETH=$2600, IMD=$9, USDT/USDC=$1. Fixed withdrawal caller and recipient: 0x047F606fD5b2BaA5f5C6c4aB8958E45CB6B054B7. Owner pauses deposits and selects replacement upgrades at a NEW address; same-address proxy upgrades are not supported by this launch. Existing funds remain withdrawable from retired receivers. Replacement constructors carry the prior accepted total. See README.md for the handoff and unavoidable unsolicited-transfer limitations."
+}
